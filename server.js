@@ -31,7 +31,7 @@ app.get('/', function(req, res){
 //Connect to our mongodb
 function connect() {
     console.log("Connected to db");
-    return mongoose.connect('mongodb://' + process.env.IP + '/waila').connection;
+    return mongoose.connect('mongodb://localhost:27017/waila').connection;
 }
 
 //Listen in
@@ -59,4 +59,4 @@ connect()
     app.post('/api/dodgyrocks/sendCustomPushToAll', dodgyRocksController.sendCustomPushToAll);
 
 //GIFme endpoints
-    app.post('/api/gifme/updateUsers', gifMeController.updateUsers);
+    app.get('/api/gifme/appUsed', gifMeController.appUsed);
