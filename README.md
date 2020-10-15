@@ -7,12 +7,14 @@
 ## For the config file:
 ### A Google Cloud Platform config file used for the GCP image classification API can be acquired when creating your GCP account here https://cloud.google.com/
 
-## Now also contains source for webapp version of waila as it runs on the same instance. Nothing fancy.
+## Now also contains source for webapp for waila
 
-Webapp is running on https://146.185.164.60
+### Run
 
-To call the API within your own project you can call:
-```https://146.185.164.60/api/vision/imageClassify``` as a POST method passing in your image file.
+``` bash
+npm i
+npm start
+```
 
 ## Contributors
 
