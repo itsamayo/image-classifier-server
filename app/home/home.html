@@ -1,17 +1,17 @@
 <div>
-    <h2 class="home-header">What am I looking at? 🤖 <a href="https://play.google.com/store/apps/details?id=com.waila.akdsgn" target="_blank"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="200"></img></a></h2>
+    <h2 class="home-header">What am I looking at? 🤖</h2>
     
-    <p class="home-para">Upload an image and let our super fancy AI tell you what it sees</p>
-    <p class="home-nb">*Don't worry, we don't store your images or any of their metadata, we are 100% GDPR compliant*</p>
+    <p class="home-para">Upload an image and see what the AI thinks is in the image</p>
+    <p class="home-nb">*Don't worry, we don't store your images or any of their metadata*</p>
 </div>
 <br><br>
 <form id="file-upload-form" action="api/vision/imageClassify">
 	<label for="file-upload" id="file-drag">
 		Select an image to upload
 		<br />OR
-		<br />Drag one into this box
+		<br />Drag one here
 		
-		<br /><br /><span id="file-upload-btn" class="button">Add an image</span>
+		<br /><br /><span id="file-upload-btn" class="button">upload image</span>
 	</label>
 	<input id="file-upload" type="file" name="fileUpload" style="display: none"/>
 	<!--<progress id="file-progress" value="0">-->
@@ -28,8 +28,7 @@
 </form>
 <div class="footer">
 	 <p>
-    	<a style="color:#f9fbff; font-size:23px;" href="https://ashleysanders.co.za" target="_blank"><i class="fa fa-hand-spock-o" aria-hidden="true"></i></a>&nbsp;&nbsp;
-    	<a style="color:#f9fbff; font-size:25px;" href="https://www.flickr.com/people/162483516@N06/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>&nbsp;&nbsp;
+    	<a style="color:#f9fbff; font-size:23px;" href="https://ashleysanders.co.za" target="_blank"><i class="fa fa-hand-spock-o" aria-hidden="true"></i></a>&nbsp;&nbsp;    	
         <a style="color:#f9fbff; font-size:25px;" href="https://github.com/AshKetchumza/waila" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;&nbsp;
         <a style="color:#f9fbff; font-size:25px;" href="https://twitter.com/AshMikeKetchum" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
     </p>

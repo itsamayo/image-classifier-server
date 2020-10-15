@@ -16,7 +16,6 @@
     var visionController = require('./server/controllers/vision-controller');
     var authController = require('./server/controllers/auth-controller');
     var dodgyRocksController = require('./server/controllers/dodgy-rocks');
-    var gifMeController = require('./server/controllers/gifme-controller');
 //Usage
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -57,6 +56,3 @@ connect()
     app.post('/api/dodgyrocks/updateFirebaseToken', dodgyRocksController.updateFirebaseToken);
     app.post('/api/dodgyrocks/slackTest', dodgyRocksController.slackTest);
     app.post('/api/dodgyrocks/sendCustomPushToAll', dodgyRocksController.sendCustomPushToAll);
-
-//GIFme endpoints
-    app.get('/api/gifme/appUsed', gifMeController.appUsed);
